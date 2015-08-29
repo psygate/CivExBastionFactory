@@ -48,11 +48,11 @@ public class BastionFactory extends Factory {
     private final static ItemStack output = new ItemStack(SPONGE, 16);
 
     static {
-        recipe.add(output);
-        recipe.add(output);
-        recipe.add(output);
-        recipe.add(output);
-        recipe.add(output);
+        recipe.add(new ChassisFactory().getOutput());
+        recipe.add(new CoolantFactory().getOutput());
+        recipe.add(new EssenceOrbFactory().getOutput());
+        recipe.add(new MechanicalFactory().getOutput());
+        recipe.add(new FuelFactory().getOutput());
     }
 
     private static void setDisplayName(ItemStack mechanical, String string) {
